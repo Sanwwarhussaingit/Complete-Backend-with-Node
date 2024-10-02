@@ -1,0 +1,10 @@
+{
+ 
+  "type": "module",
+ 
+  "dependencies": {
+ 
+  "sanwwar": "^1.0.1"
+ 
+  }
+}
