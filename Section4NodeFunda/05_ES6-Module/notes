@@ -1,0 +1,62 @@
+ES6 (ECMAScript 2015) modules are supported natively, starting from Node.js 12+. These modules use the import and export syntax rather than the CommonJS require() and module.exports. Here’s how to work with ES6 modules in Node.js.
+
+Key Concepts of ES6 Modules in Node.js:
+File Extension:
+
+ES6 modules use .mjs extension by default in Node.js, or you can enable ES6 modules in .js files by adding "type": "module" in your package.json.
+Importing and Exporting:
+
+Named Exports: You can export specific variables or functions.
+Default Export: You can export a single default value.
+Example of ES6 Module
+1. Named Exports and Imports:
+math.mjs (or .js if "type": "module" is set in package.json):
+js
+Copy code
+// math.mjs
+export function add(a, b) {
+  return a + b;
+}
+
+export function subtract(a, b) {
+  return a - b;
+}
+Using the Module:
+js
+Copy code
+// main.mjs
+import { add, subtract } from './math.mjs';
+
+console.log(add(2, 3));       // Outputs: 5
+console.log(subtract(5, 2));  // Outputs: 3
+2. Default Export and Import:
+math.mjs:
+js
+Copy code
+// math.mjs
+export default function multiply(a, b) {
+  return a * b;
+}
+Using the Default Export:
+js
+Copy code
+// main.mjs
+import multiply from './math.mjs';
+
+console.log(multiply(3, 4));  // Outputs: 12
+Enable ES6 Modules for .js Files
+You can use .js files with ES6 modules by setting "type": "module" in your package.json:
+
+json
+Copy code
+{
+  "type": "module"
+}
+After this, you can use ES6 module syntax in .js files without needing .mjs.
+
+Importing CommonJS Modules in ES6
+You can still import CommonJS modules in ES6 modules using import:
+
+js
+Copy code
+import fs from 'fs';  // Importing Node.js built-in modules
