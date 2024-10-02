@@ -1,0 +1,12 @@
+the module wrapper function provides a private scope for each module. Every file in Node.js is treated as a module and is wrapped inside a function before execution. This function looks like this:
+
+
+(function (exports, require, module, __filename, __dirname) {
+  // Module code here
+});
+
+exports: A shortcut to module.exports, used to export variables or functions from the module.
+require: A function to import other modules.
+module: An object representing the current module, with an exports property to export values.
+__filename: The absolute path of the current module file.
+__dirname: The directory name of the current module.
