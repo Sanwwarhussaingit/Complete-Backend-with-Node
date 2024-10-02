@@ -1,0 +1,26 @@
+
+"scripts": {},
+
+with npm without run 
+ "start": "whoami",
+"test": "pwd",
+"restart": "node",
+"stop": "git -v"
+whith run hi
+"hi: "ls"
+
+
+execute on realtime(live execeution) when any change of the file
+ "dev": "node --watch app.js"
+
+
+
+dependencies version-
+"express": "~3.4.5" : ~ incressing only last
+"express": "^3.4.5" : ^ ncressing onlu last and last second
+"express": "*" : donwload latest version
+
+devDependencies
+nodemon:-
+        restarting due to changes...    
+            starting `node app.js`
