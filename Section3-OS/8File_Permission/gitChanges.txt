@@ -1,0 +1,10 @@
+git diff --cached
+
+
+diff --git a/command.sh b/command.sh
+old mode 100644
+new mode 100755
+
+
+100644 means the file is not executable.
+100755 means the file is now executable.

@@ -1,0 +1,15 @@
+unix file permissions 
+ -r--rw-r-- 1 sanwwar sanwwar   30 Sep 11 07:32 command.sh
+
+ chmod - command use to change the r,w,x  permissions 
+ fisrt three wxr is user (owner ), 
+ second thre is group 
+ ans last three is other 
+ (u,g,o) wxr
+
+
+ -------------------
+ Read => r => 4
+ Write => w => 2
+ Execute => x => 3
+ 

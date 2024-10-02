@@ -1,0 +1,4 @@
+    Absolute path = C:\Users\sanww\OneDrive\Desktop\Web Technology\Backend\NodeJs\Section3-OS\FileSystem\test.txt
+    relative path = 
+    test.txt
+    src\test.js

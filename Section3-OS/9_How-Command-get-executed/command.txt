@@ -1,0 +1,13 @@
+Alias: Bash first check if the command matches my defined alises
+
+function: next, it check if the command matches any defined shell function.
+
+Built-ins: then bash check if the command is a built in shell command - cd echo ped tce
+
+Hash Table: Bash checks its hash table of previously looked-up executable to quickly locate executables
+
+
+Executable file: iit search thruogh the directores listed
+
+-pwd,   echo and all  is executable(exe) file
+

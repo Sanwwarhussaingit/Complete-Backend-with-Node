@@ -1,0 +1,20 @@
+binary executable file
+script executable file
+
+
+
+
+
+
+
+
+
+An executable file is a type of computer file that contains a program that can be directly executed by the operating system. These files usually have extensions like .exe (on Windows), .bin (on Linux), or .app (on macOS). When you double-click or run an executable file, the operating system reads the machine code inside it and executes the program.
+
+Executables can be compiled from source code written in programming languages like C++, Java, or Python, where the human-readable code is translated into machine code that the computer can execute.
+
+
+
+
+
+
