@@ -1,0 +1,41 @@
+
+what npx does?
+Searches for a file and executes
+
+
+
+Search 
+step 1
+    -Search for package.json in cuurrent working directory,
+and
+    -Searches for name key in the package.json file
+then
+    -Searches for bin key in the package.json file
+
+Search step-2 
+    -Searches for node module /bin folder and search file (hello) which you run  in cuurrent working directory
+    -and executes
+
+search step-3
+npm root -g  => check global package
+
+    Searches for hello file in global npm folder (/c/Users/sanww/AppData/Roaming/npm/vite)
+    and then executes
+
+
+Search step-4{
+        Searches for hello package in npx cashe and then executes
+        (C:\Users\sanww\AppData\Local\npm-cache\_npx)
+}
+
+Search step-5
+
+    Searches in npm website then installs or executes
+
+    ex- Searches for hello package in npm registry
+    Donwload (if y) and executes if 
+
+
+
+
+

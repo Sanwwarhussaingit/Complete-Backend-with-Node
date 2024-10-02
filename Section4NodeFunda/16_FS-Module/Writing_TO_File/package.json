@@ -1,0 +1,9 @@
+{
+    "type": "module",
+    "name": "copy-File",
+    "version": "1.0.0",
+    "main": "copy.js",
+    "bin": {
+        "copy": "./copy.js"
+    }
+}

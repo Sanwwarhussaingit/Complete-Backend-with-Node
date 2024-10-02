@@ -1,0 +1,19 @@
+
+8:59:03 am
+ENOENT: no such file or directory, open 'C:\Users\sanww\OneDrive\Desktop\Web Technology\Backend\NodeJs\section4_Node-Fundamental\16_FS-Module\Writing_TO_File\testttt.png' 
+ Error: ENOENT: no such file or directory, open 'C:\Users\sanww\OneDrive\Desktop\Web Technology\Backend\NodeJs\section4_Node-Fundamental\16_FS-Module\Writing_TO_File\testttt.png'
+    at async open (node:internal/fs/promises:638:25)
+    at async readFile (node:internal/fs/promises:1238:14)
+    at async file:///C:/Users/sanww/OneDrive/Desktop/Web%20Technology/Backend/NodeJs/section4_Node-Fundamental/16_FS-Module/Writing_TO_File/app.js:9:23
+9:00:08 am
+ENOENT: no such file or directory, open 'C:\Users\sanww\OneDrive\Desktop\Web Technology\Backend\NodeJs\section4_Node-Fundamental\16_FS-Module\Writing_TO_File\testttt.png' 
+ Error: ENOENT: no such file or directory, open 'C:\Users\sanww\OneDrive\Desktop\Web Technology\Backend\NodeJs\section4_Node-Fundamental\16_FS-Module\Writing_TO_File\testttt.png'
+    at async open (node:internal/fs/promises:638:25)
+    at async readFile (node:internal/fs/promises:1238:14)
+    at async file:///C:/Users/sanww/OneDrive/Desktop/Web%20Technology/Backend/NodeJs/section4_Node-Fundamental/16_FS-Module/Writing_TO_File/app.js:9:23
+9:00:44 am
+ENOENT: no such file or directory, open 'C:\Users\sanww\OneDrive\Desktop\Web Technology\Backend\NodeJs\section4_Node-Fundamental\16_FS-Module\Writing_TO_File\testttt.png' 
+ Error: ENOENT: no such file or directory, open 'C:\Users\sanww\OneDrive\Desktop\Web Technology\Backend\NodeJs\section4_Node-Fundamental\16_FS-Module\Writing_TO_File\testttt.png'
+    at async open (node:internal/fs/promises:638:25)
+    at async readFile (node:internal/fs/promises:1238:14)
+    at async file:///C:/Users/sanww/OneDrive/Desktop/Web%20Technology/Backend/NodeJs/section4_Node-Fundamental/16_FS-Module/Writing_TO_File/app.js:9:23

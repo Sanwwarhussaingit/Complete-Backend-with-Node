@@ -1,0 +1,77 @@
+
+UTF-8 (Unicode Transformation Format - 8-bit) is a character encoding system used to represent text. It is designed to encode all possible characters (code points) in Unicode, which covers nearly all written languages, symbols, and emojis.
+
+Key features of UTF-8:
+
+Variable-length encoding: Characters are encoded in one to four bytes.
+ASCII characters (like A-Z, a-z, 0-9) are encoded in a single byte.
+Non-ASCII characters (like Chinese, Arabic, or emojis) require multiple bytes.
+Backward compatibility: UTF-8 is compatible with ASCII, meaning ASCII text remains unchanged.
+Widely used: UTF-8 is the most common character encoding on the web, ensuring broad compatibility.
+UTF-8 allows systems to handle diverse character sets from various languages efficiently.
+
+
+
+readFileSync :- blocking main thread execution , after execution then main thread
+
+
+
+readFile (asynchronous):
+- Non-blocking operation
+- Uses callbacks or Promises
+- Doesn't halt the main thread execution
+- Suitable for I/O-heavy applications
+
+Example:
+import { promises as fs } from 'fs';
+
+async function readFileExample() {
+    try {
+        const data = await fs.readFile('./example.txt', 'utf8');
+        console.log(data);
+    } catch (error) {
+        console.error('Error reading file:', error);
+    }
+}
+
+readFileExample();
+console.log('This will be logged before file contents');
+
+In this example, the main thread continues execution while the file is being read.
+The 'This will be logged before file contents' message will likely appear before the file contents.
+
+------------------------------------------------------
+
+
+sync file and asyn file:------- 
+S Module in Node.js
+Importing fs (Synchronous and Asynchronous)
+
+import fs from "node:fs";
+This imports the synchronous file system methods like readFileSync(). These methods block execution until the operation is complete.
+
+import fs from "node:fs/promises";
+This imports promise-based asynchronous file system methods like readFile(), which return promises and do not block the main thread.
+
+fs.readFileSync() (Synchronous)
+
+Usage: Reads a file synchronously (blocking).
+Example:
+import fs from 'node:fs';
+const data = fs.readFileSync('file.txt', 'utf-8');
+console.log(data);
+Behavior: It pauses the execution of the program until the file is fully read. If the file is large or the system is busy, the rest of the code will wait until this is done.
+fs.readFile() in Promises (Asynchronous)
+
+Usage: Reads a file asynchronously using promises.
+Example:
+import fs from 'node:fs/promises';
+fs.readFile('file.txt', 'utf-8')
+  .then(data => console.log(data))
+  .catch(err => console.error(err));
+Behavior: It does not block the event loop. Other operations can continue while the file is being read, and the result is handled later via .then() or async/await.
+Difference:
+
+readFileSync() (Synchronous): Blocks the entire execution of the code until the file is read.
+readFile() (Asynchronous with Promises): Does not block the execution and allows other operations to proceed while the file is being read.
+----------------------------------------------------------------
